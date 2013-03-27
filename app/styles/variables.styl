@@ -1,0 +1,20 @@
+$page-width = 960px
+
+$strokeGray     = #dddee1
+$backgroundGray = #f8f9fa
+$white          = #ffffff
+$black          = #000000
+$hoverBlue      = #d4dff3
+$textlinkcolor  = #416ccd
+$fb_darkBlue    = #3b5998
+$fb_lightBlue   = #f7faff
+$fb_gray        = #f7f7f7
+
+createLightSignal(startColor, stopColor, rgbaValue, borderColor)
+  background-image -moz-radial-gradient(50% 30%, startColor, stopColor)
+  background-image -webkit-radial-gradient(50% 30%, startColor, stopColor)
+  background-image -o-radial-gradient(50% 30%, startColor, stopColor)
+  background-image -ms-radial-gradient(50% 30%, startColor, stopColor)
+  background-image radial-gradient(50% 30%, startColor, stopColor)
+  box-shadow       0 0 7px 1px rgbaValue
+  border           1px solid borderColor
